@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000000;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+    color: #da5e2d;
+}
+
+header h1 {
+  margin-bottom: 20px;
+}
+
+main {
+    background-color: #f2f4f3;
+    border: 5px solid #da5e2d;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 5px #f2f4f3;
+}
+
+.balance {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 2em auto;
+}
+
+.card {
+    background-color: #1565C0;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 1em;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    color: white;
+    min-width: 120px;
+    max-width: 150px;
+    overflow: hidden;
+}
+
+.positive {
+    background-color: #2E7D32;
+}
+
+.negative {
+    background-color: #C62828;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-section {
+    margin: 1em auto;
+}
+
+.form-section h2 {
+    margin-bottom: 5px;
+}
+
+.form-section input {
+    padding: .3em;
+}
+
+.form-section button {
+    padding: .3em;
+}
+
+input, button {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #F17544;
+  color: #fff;
+  cursor: pointer;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transactions ul {
+  list-style: none;
+  width: 100%;
+  max-width: 400px;
+}
+
+.transactions li {
+  background: #fff;
+  padding: 10px;
+  border-left: 5px solid #F17544;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}

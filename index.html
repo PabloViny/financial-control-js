@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Controle Financeiro Pessoal</h1>
+    </header>
+
+    <main>
+        <section class="balance">
+            <div class="card positive">
+                <h3>Entradas</h3>
+                <p id="incomes">R$ 0,00</p>
+            </div>
+            <div class="card negative">
+                <h3>Saidas</h3>
+                <p id="expense">R$ 0,00</p>
+            </div>
+            <div class="card total">
+                <h3>Saldo</h3>
+                <p id="balance">R$ 0,00</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Nova transação</h2>
+            <form id="transaction-form">
+                <input type="text" id="description" placeholder="Descrição" required>
+                <input type="number" id="amount" placeholder="Valor (use negativo p/ saída)" required>
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+
+        <section class="transactions">
+            <h2>Histórico</h2>
+            <div class="list">
+                <ul id="transaction-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
